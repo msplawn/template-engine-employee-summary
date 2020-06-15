@@ -1,6 +1,7 @@
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
+const Employee = require("./lib/Employee");
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
@@ -14,6 +15,33 @@ const render = require("./lib/htmlRenderer");
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
+const questions = [
+    {
+        type: 'input',
+        message: 'Please enter your full name.',
+        name: 'fullName'
+    },
+    {
+        type: 'input',
+        message: 'Please enter your employee ID number.',
+        name: 'id'
+    },
+    {
+        type: 'input',
+        message: 'Please enter your email.',
+        name: 'email'
+    },
+    {
+        type: 'list',
+        message: 'Please enter your role.',
+        choices: ['Manager', 'Engineer', 'Intern'],
+        name: 'role'
+    },
+];
+
+inquirer
+.prompt(questions);
+    
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will
 // generate and return a block of HTML including templated divs for each employee!
