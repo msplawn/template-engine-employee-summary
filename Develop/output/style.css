@@ -1,21 +1,43 @@
 .team-heading    {
 background-color: black;
 color: whitesmoke;
+box-shadow: 2px 2px 10px 2px gray ;
 }
 
+.team-heading:hover{
+    box-shadow: 1px 1px 2px 2px gray ;
+    animation: pulse 1s infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes pulse {
+    0% { box-shadow: 1px 1px 2px 2px gray ;(1); }
+    100% { box-shadow: 1px 1px 2px 2px gray ;(1.1); }
+    50% { box-shadow: 2px 2px 4px 4px gray ;(1);
+    }
+  }
+
+.text-center:hover{
+    color: greenyellow;
+}
 .card-header    {
     background-color: black;
     color: whitesmoke;
     margin-bottom: 0px;
 }
 
+.card-header:hover  {
+    color: greenyellow;
+}
+
+h2, h3{
+    text-align: center;
+}
+
+
 .card   {
-    margin: 10px;
-    box-shadow: 5px 5px 10px 5px gray ;
+    margin: 30px;
+    box-shadow: 5px 5px 20px 5px gray ;
     width: 100%;
 }
 
-.background  {
-    background-color: lightblue;
-    padding: 50px;
-}
