@@ -135,7 +135,6 @@ function appMenu ()   {
                 const intern = new Intern(res.name, res.id, res.email, res.school);
                 team.push(intern);
                 createTeam();
-                console.log(team)
             })
     }
 
