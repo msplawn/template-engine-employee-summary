@@ -1,0 +1,20 @@
+.team-heading    {
+background-color: black;
+color: whitesmoke;
+}
+
+.card-header    {
+    background-color: black;
+    color: whitesmoke;
+    margin-bottom: 0px;
+}
+
+.card   {
+    margin: 10px;
+    box-shadow: 5px 5px 10px 5px gray ;
+}
+
+.background  {
+    background-color: lightblue;
+    padding: 50px;
+}
