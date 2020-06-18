@@ -6,16 +6,16 @@ box-shadow: 2px 2px 10px 2px gray ;
 
 .team-heading:hover{
     box-shadow: 1px 1px 2px 2px gray ;
-    animation: pulse 1s infinite;
-    animation-timing-function: linear; 
+    /* animation: pulse 1s infinite;
+    animation-timing-function: linear;  */
 }
 
-@keyframes pulse {
+/* @keyframes pulse {
     0% { box-shadow: 1px 1px 2px 2px gray ;(1); }
     100% { box-shadow: 1px 1px 2px 2px gray ;(1.1); }
     50% { box-shadow: 2px 2px 4px 4px gray ;(1);
     }
-  }
+  } */
 
 .text-center:hover{
     color: greenyellow;
@@ -36,8 +36,21 @@ h2, h3{
 
 
 .card   {
-    margin: 30px;
     box-shadow: 5px 5px 20px 5px gray ;
+    margin: 30px;
     width: 100%;
 }
+
+.card:hover{
+    box-shadow: 5px 5px 20px 5px gray ;
+    animation: pulse 1s infinite;
+    animation-timing-function: linear; 
+
+}
+@keyframes pulse {
+    0% { box-shadow: 1px 1px 2px 2px lightgreen ;(1); }
+    100% { box-shadow: 1px 1px 2px 2px yellowgreen ;(1.1); }
+    50% { box-shadow: 2px 2px 4px 4px limegreen ;(1);
+    }
+  }
 
