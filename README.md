@@ -11,7 +11,7 @@ For this project I modified existing code to create a CLI driven application tha
 # **Demo Video:**
 [https://drive.google.com/file/d/1Rp3A5gqIXETpRQcXIrvwFpsWsMaiew4w/view]
 
-# **Installation**
+# **Installation and Use**
 Download the zip file and unzip it. Open the files and run npm install to intall the required dependencies. Then run node app and answer the prompted questions. Upon completion check the output folder to view the team.html file in your browser.
 
 
